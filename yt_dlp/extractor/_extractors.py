@@ -150,6 +150,7 @@ from .arte import (
 )
 from .arnes import ArnesIE
 from .asobichannel import AsobiChannelIE, AsobiChannelTagURLIE
+from .asobistage import AsobiStageIE
 from .atresplayer import AtresPlayerIE
 from .atscaleconf import AtScaleConfEventIE
 from .atvat import ATVAtIE
@@ -386,7 +387,11 @@ from .comedycentral import (
     ComedyCentralIE,
     ComedyCentralTVIE,
 )
-from .commonmistakes import CommonMistakesIE, UnicodeBOMIE
+from .commonmistakes import (
+    BlobIE,
+    CommonMistakesIE,
+    UnicodeBOMIE,
+)
 from .commonprotocols import (
     MmsIE,
     RtmpIE,
@@ -590,6 +595,7 @@ from .facebook import (
     FacebookReelIE,
     FacebookAdsIE,
 )
+from .fathom import FathomIE
 from .fancode import (
     FancodeVodIE,
     FancodeLiveIE
@@ -874,6 +880,7 @@ from .jeuxvideo import JeuxVideoIE
 from .jiosaavn import (
     JioSaavnSongIE,
     JioSaavnAlbumIE,
+    JioSaavnPlaylistIE,
 )
 from .jove import JoveIE
 from .joj import JojIE
@@ -988,6 +995,10 @@ from .livestreamfails import LivestreamfailsIE
 from .lnkgo import (
     LnkGoIE,
     LnkIE,
+)
+from .loom import (
+    LoomIE,
+    LoomFolderIE,
 )
 from .lovehomeporn import LoveHomePornIE
 from .lrt import (
@@ -1750,6 +1761,7 @@ from .shahid import (
     ShahidIE,
     ShahidShowIE,
 )
+from .sharepoint import SharePointIE
 from .sharevideos import ShareVideosEmbedIE
 from .sibnet import SibnetEmbedIE
 from .shemaroome import ShemarooMeIE
@@ -2283,6 +2295,7 @@ from .vrt import (
     VrtNUIE,
     KetnetIE,
     DagelijkseKostIE,
+    Radio1BeIE,
 )
 from .vtm import VTMIE
 from .medialaan import MedialaanIE
